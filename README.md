@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/c7c1ab0e-ebf7-45f9-b1e5-94516c46027b
 
 ### bar
 - 4つ打ちのプログレスバー
-- BPM同期スクリプトが必要
+- BPM同期スクリプトと白水氏の@hksy.objが必要
 
 ### blinker
 - 図形が明滅する
