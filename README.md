@@ -1,6 +1,13 @@
 # BPM-Syncer
 bpm同期オブジェクトのエイリアス集
 
+## デモ
+
+
+https://github.com/user-attachments/assets/c7c1ab0e-ebf7-45f9-b1e5-94516c46027b
+
+
+
 ## 概要
 基本図形とテキストを任意のBPMに同期させる．
 
