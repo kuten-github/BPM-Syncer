@@ -16,8 +16,9 @@ bpm同期オブジェクトのエイリアス集
 
 - 図形が明滅する
 - スクリプト制御で編集
+
 記述例
-'''lua
+```lua
 --プロパティ
 bpm=60
 x_dist=0
@@ -30,7 +31,7 @@ size=50
 b_1=bpm/15
 b_4=bpm/60
 b_16=bpm/240
-記述例
+
 --処理
 obj.load("figure",shape,color,size,4000)
 if(math.floor(b_4*obj.time)%2 == 0) then
@@ -39,15 +40,16 @@ else
   obj.load("figure",shape,color,size,0)
   obj.draw(0*x_dist,0*y_dist)
 end
-'''
+```
 
 **counter**
 
 - 小節数カウンタと1/4 & 1/16のビートループ
 - ファイル末尾のclrはオブジェクトの位置（center, left, right）
 - テキストで編集
+
 記述例
-'''lua
+```lua
 <?
   --プロパティ
   bpm=60
@@ -58,14 +60,15 @@ end
   --処理
   mes(string.format("%01d",ot%4))
 ?>
-''' 
+``` 
 
 **flow**
 
 - 図形が左から右に流れる
 - スクリプト制御で編集
+
 記述例
-'''lua
+```lua
 --プロパティ
 bpm=60
 x_dist=100
@@ -90,12 +93,27 @@ elseif(math.floor(b_4*obj.time)%4 == 2) then
 elseif(math.floor(b_4*obj.time)%4 == 3) then
   obj.draw(1.5*x_dist,0*y_dist)
 end
-'''
+```
 
 ### インストール
 
 以下の2つのスクリプトを導入する．
-BPM同期効果処理
+
+BPM同期効果処理<br>
+
 https://commons.nicovideo.jp/works/sm38516538
+
 角丸四角形(hksy)
+
 https://purinka.work/download/hksy.html
+
+エイリアスの配置は以下の通りに行う．<br>
+ AviUtl
+　 ├ exedit.auf
+　 └ @bpm_sync
+     └ bar.exa
+     └ blinker.exa
+     └ counter_c.exa
+     └ counter_l.exa
+     └ counter_r.exa
+     └ flow.exa
