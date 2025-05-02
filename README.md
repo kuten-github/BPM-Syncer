@@ -1,5 +1,5 @@
 # BPM-Syncer
-bpm同期オブジェクトのエイリアス集
+BPM同期オブジェクトのエイリアス集
 
 ## デモ
 
@@ -100,7 +100,7 @@ end
  ```
 AviUtl
 　├ exedit.auf
-　└ @bpm_sync
+　└ @bpm_syncer
     └ bar.exa
     └ blinker.exa
     └ counter_c.exa
