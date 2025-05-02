@@ -1,23 +1,17 @@
 # BPM-Syncer
 bpm同期オブジェクトのエイリアス集
 
-### 概要
-
+## 概要
 基本図形とテキストを任意のBPMに同期させる．
 
-ミニマルかつ視覚的にわかりやすいものを選別した．
-
-**bar**
-
+### bar
 - 4つ打ちのプログレスバー
 - BPM同期スクリプトが必要
 
-**blinker**
-
+### blinker
 - 図形が明滅する
 - スクリプト制御で編集
-
-記述例
+**記述例**
 ```lua
 --プロパティ
 bpm=60
@@ -42,13 +36,11 @@ else
 end
 ```
 
-**counter**
-
+### counter
 - 小節数カウンタと1/4 & 1/16のビートループ
 - ファイル末尾のclrはオブジェクトの位置（center, left, right）
 - テキストで編集
-
-記述例
+**記述例**
 ```lua
 <?
   --プロパティ
@@ -62,12 +54,10 @@ end
 ?>
 ``` 
 
-**flow**
-
+### flow
 - 図形が左から右に流れる
 - スクリプト制御で編集
-
-記述例
+**記述例**
 ```lua
 --プロパティ
 bpm=60
@@ -95,25 +85,23 @@ elseif(math.floor(b_4*obj.time)%4 == 3) then
 end
 ```
 
-### インストール
+## インストール
+エイリアスの配置は以下の通りに行う．
+ ```
+AviUtl
+　├ exedit.auf
+　└ @bpm_sync
+    └ bar.exa
+    └ blinker.exa
+    └ counter_c.exa
+    └ counter_l.exa
+    └ counter_r.exa
+    └ flow.exa
+```
 
-以下の2つのスクリプトを導入する．
-
-BPM同期効果処理<br>
-
+**bar**
+の利用には以下の2つのスクリプトを導入する．
+**BPM同期効果処理**
 https://commons.nicovideo.jp/works/sm38516538
-
-角丸四角形(hksy)
-
+**角丸四角形(hksy)**
 https://purinka.work/download/hksy.html
-
-エイリアスの配置は以下の通りに行う．<br>
- AviUtl
-　 ├ exedit.auf
-　 └ @bpm_sync
-     └ bar.exa
-     └ blinker.exa
-     └ counter_c.exa
-     └ counter_l.exa
-     └ counter_r.exa
-     └ flow.exa
