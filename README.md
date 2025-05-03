@@ -4,8 +4,7 @@ BPM同期オブジェクトのエイリアス集
 ## デモ
 
 
-https://github.com/user-attachments/assets/c7c1ab0e-ebf7-45f9-b1e5-94516c46027b
-
+https://github.com/user-attachments/assets/46b754b8-b3ec-4c05-924d-47f284b99940
 
 
 ## 概要
